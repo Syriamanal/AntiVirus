@@ -84,7 +84,7 @@ fin.getline(file_name, 200);
 response = scan_this(file_name);
 if(response == 1)
 {
-cout << "<–!! Caution.! A Virus has been Detected..!";
+cout << "<–!! Caution!!-> A Virus has been Detected..!";
 cout << "n"<<file_name;
 cout << "nPress enter to remove virus...";
 ask= getch();
@@ -97,7 +97,7 @@ remove(file_name); // delete the virus
 }
 
 fin.close();
-cout << "Scan Complete...";
-cout << "Thank you fror using this Quantom AntiVirus...";
+cout << "Quantom AniVirus Has Completed Scan...";
+cout << "Thank you for using this Quantom AntiVirus...";
 getch();
 
