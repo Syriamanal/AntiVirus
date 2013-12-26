@@ -17,7 +17,7 @@ fin4.open("db.txt"); // this is our character pattern file
 
 for(;;)
 {
-fin4>>pattern;
+fin4 >> pattern;
 if(!strcmp(pattern,"<-"))
 {
 fin4>>pattern;
@@ -64,8 +64,8 @@ char ask;
 int response;
 ifstream fin;
 
-cout<<"Enter Directory you want to scan: ";
-cin>>dirpath;
+cout << "Enter Directory you want to scan: ";
+cin > dirpath;
 
 strcpy(comm, "dir ");
 strcat(comm, "dirpath /b /s >tmp.$$$");
@@ -79,10 +79,11 @@ fin.getline(file_name, 200);
 response = scan_this(file_name);
 if(response == 1)
 {
-cout<<"<–!! Caution.! A Virus has been Detected..!";
-cout<<"n"<<file_name;
-cout<<"nPress Enter Key to Delete it.";
+cout << "<–!! Caution.! A Virus has been Detected..!";
+cout << "n"<<file_name;
+cout << "nPress enter to remove virus...";
 ask= getch();
+cout << "Removeing virus...";
 if(ask == 13)
 {
 remove(file_name); // delete the virus
@@ -92,6 +93,6 @@ remove(file_name); // delete the virus
 
 fin.close();
 cout << "Scan Complete...";
-cout << "Thank you fror using this AntiVirus...";
+cout << "Thank you fror using this Quantom AntiVirus...";
 getch();
 
