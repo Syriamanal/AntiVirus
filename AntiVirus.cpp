@@ -97,6 +97,7 @@ remove(file_name); // delete the virus
 }
 
 fin.close();
+cout << "Successful...\a" << endl;
 cout << "Quantom AniVirus Has Completed Scan...";
 cout << "Thank you for using this Quantom AntiVirus...";
 getch();
